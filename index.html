@@ -25,13 +25,12 @@
             overflow: hidden;
         }
 
-        .logo {
-            font-family: 'Pacifico', cursive;
-            font-size: 4rem;
-            color: #000000;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            animation: float 3s infinite ease-in-out;
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin-bottom: 20px;
+            animation: float 3s infinite ease-in-out;
         }
 
         @keyframes float {
@@ -41,6 +40,31 @@
             50% {
                 transform: translateY(-10px);
             }
+        }
+
+        .house-icon {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            background: #000000;
+            clip-path: polygon(50% 0%, 0% 50%, 0% 100%, 100% 100%, 100% 50%);
+        }
+
+        .chimney {
+            width: 20px;
+            height: 40px;
+            background: #000000;
+            position: absolute;
+            top: -20px;
+            left: 15px;
+        }
+
+        .company-name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000000;
+            margin-top: 10px;
         }
 
         .content {
@@ -101,11 +125,16 @@
         }
 
         /* Google Fonts */
-        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
     </style>
 </head>
 <body>
-    <div class="logo">Northgoods</div>
+    <div class="logo-container">
+        <div class="house-icon">
+            <div class="chimney"></div>
+        </div>
+        <div class="company-name">Northgoods</div>
+    </div>
     <div class="content">
         <h1>Exciting Changes are Coming!</h1>
         <p>
@@ -120,5 +149,3 @@
     </footer>
 </body>
 </html>
-
-
