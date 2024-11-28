@@ -13,8 +13,8 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to bottom, #b3d9ff, #0073e6);
+            font-family: 'Arial', sans-serif;
+            background: #f5f0e8; /* Beige background */
             color: #333333;
             display: flex;
             flex-direction: column;
@@ -26,45 +26,16 @@
         }
 
         .logo-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             margin-bottom: 20px;
-            animation: float 3s infinite ease-in-out;
         }
 
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        .house-icon {
-            width: 80px;
-            height: 80px;
-            position: relative;
-            background: #000000;
-            clip-path: polygon(50% 0%, 0% 50%, 0% 100%, 100% 100%, 100% 50%);
-        }
-
-        .chimney {
-            width: 20px;
-            height: 40px;
-            background: #000000;
-            position: absolute;
-            top: -20px;
-            left: 15px;
-        }
-
-        .company-name {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.5rem;
+        .logo-text {
+            font-family: 'Arial', sans-serif;
+            font-size: 3.5rem;
             font-weight: bold;
             color: #000000;
-            margin-top: 10px;
+            letter-spacing: -0.05em; /* Slightly condensed text */
+            text-transform: lowercase;
         }
 
         .content {
@@ -72,13 +43,13 @@
             padding: 20px;
             background: rgba(255, 255, 255, 0.85);
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
             font-size: 2.2rem;
             margin-bottom: 15px;
-            color: #003366;
+            color: #333333;
         }
 
         p {
@@ -123,17 +94,11 @@
             font-size: 0.9rem;
             color: #666666;
         }
-
-        /* Google Fonts */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
     </style>
 </head>
 <body>
     <div class="logo-container">
-        <div class="house-icon">
-            <div class="chimney"></div>
-        </div>
-        <div class="company-name">Northgoods</div>
+        <div class="logo-text">northgoods.</div>
     </div>
     <div class="content">
         <h1>Exciting Changes are Coming!</h1>
