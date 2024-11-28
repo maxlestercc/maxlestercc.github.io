@@ -13,9 +13,9 @@
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
-            background: linear-gradient(to bottom, #1a1a1a, #003366);
-            color: #f4f4f4;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #b3d9ff, #0073e6);
+            color: #333333;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -26,36 +26,25 @@
         }
 
         .logo {
-            font-family: 'Lobster', cursive;
+            font-family: 'Poppins', sans-serif;
             font-size: 3.5rem;
-            color: #00ffcc;
-            text-shadow: 2px 2px 8px rgba(0, 255, 204, 0.5);
-            animation: float 3s infinite ease-in-out;
+            font-weight: bold;
+            color: #000000;
             margin-bottom: 20px;
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
         }
 
         .content {
             max-width: 650px;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.85);
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             margin-bottom: 15px;
-            color: #ffffff;
+            color: #003366;
         }
 
         p {
@@ -65,7 +54,7 @@
         }
 
         a {
-            color: #00ffcc;
+            color: #0056b3;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1rem;
@@ -73,36 +62,36 @@
 
         a:hover {
             text-decoration: underline;
-            color: #00e6b3;
+            color: #003d80;
         }
 
         .button {
             margin-top: 15px;
             padding: 10px 20px;
-            background: #00ffcc;
-            color: #1a1a1a;
+            background: #0056b3;
+            color: #ffffff;
             border: none;
             border-radius: 5px;
             font-size: 1.1rem;
             font-weight: bold;
             cursor: pointer;
-            box-shadow: 0 4px 10px rgba(0, 255, 204, 0.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
 
         .button:hover {
-            background: #00e6b3;
-            box-shadow: 0 6px 15px rgba(0, 255, 204, 0.5);
+            background: #003d80;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
 
         footer {
             margin-top: 30px;
             font-size: 0.9rem;
-            color: #cccccc;
+            color: #666666;
         }
 
         /* Google Fonts */
-        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
     </style>
 </head>
 <body>
@@ -110,10 +99,10 @@
     <div class="content">
         <h1>Exciting Changes are Coming!</h1>
         <p>
-            We're in the middle of renovating our website to bring you an improved experience. 
-            In the meantime, our amazing products are available on <a href="https://www.amazon.com" target="_blank">Amazon</a>.
+            We're currently renovating our website to bring you something fresh and exciting. 
+            While we work, you can find our amazing products on <a href="https://www.amazon.com" target="_blank">Amazon</a>.
         </p>
-        <p>We'll relaunch in January 2025. Stay tuned!</p>
+        <p>We'll be back and better than ever in January 2025. Thank you for your patience!</p>
         <button class="button" onclick="location.href='https://www.amazon.com';">Shop on Amazon</button>
     </div>
     <footer>
@@ -121,4 +110,5 @@
     </footer>
 </body>
 </html>
+
 
