@@ -1,47 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/svg+xml" href="./assets/north-goods-trasparent.png">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./style.css">
-        <title>northgoods</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northgoods | Maintenance</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <body>
-        <div class="container">
-            <header>
-                <div class="container">
-                    <nav class="navbar navbar-expand-lg navbar-light px-0">
-                        <div class="navbar-brand" href="#" style="text-align: center;">
-                            <img class="img-fluid" src="assets/north-goods-trasparent-small.png" alt="logo" style="width:70%">
-                        </div>
-                    </nav>
-                </div>
-            </header>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #003366, #0073e6);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
 
-            <div class="above-the-fold">
-                <div class="flex-grow-1 d-flex flex-column justify-content-center">
-                    <div class="row">
-                        <div class="col-md-7 pt-4">
-                            <h2 class="mb-0">Coming soon!</h2>
-                            <p class="my-3">🌟 Welcome to northgoods, where cozy dreams and playful designs come together! 🌈</p>
-                            <p class="my-3">At northgoods, we're crafting more than just bedding; we're creating a world of imagination for your little ones to explore. From cuddly comforters to whimsical pillowcases, our premium bedding collection is designed to spark joy and inspire magical dreams.</p>
-                            <p class="my-3">Stay tuned as we put the finishing touches on our site! In the meantime, get ready to transform bedtime into an adventure with our delightful designs. Coming soon!</p>
-                        </div>
-                        <div class="col-md-5 text-right my-3">
-                            <img width="95%" height="auto" src="assets/little-girl-having-fun-home.jpg" alt="headshot-circle" class="headshot">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            color: #ffffff;
+            background: linear-gradient(120deg, #ffffff, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #00d4ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">Northgoods</div>
+    <div class="content">
+        <h1>We're Renovating!</h1>
+        <p>
+            Our website is currently under maintenance as we work on creating something amazing. 
+            In the meantime, you can find our products on <a href="https://www.amazon.com" target="_blank">Amazon</a>.
+        </p>
+        <p>We'll be back up and running in January 2025. Stay tuned!</p>
+    </div>
+    <footer>
+        © 2024 Northgoods. All rights reserved.
+    </footer>
+</body>
 </html>
