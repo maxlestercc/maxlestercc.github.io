@@ -13,54 +13,86 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(120deg, #003366, #0073e6);
-            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #1a1a1a, #003366);
+            color: #f4f4f4;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             text-align: center;
+            overflow: hidden;
         }
 
         .logo {
-            font-size: 2.5rem;
-            font-weight: bold;
-            letter-spacing: 0.1em;
-            color: #ffffff;
-            background: linear-gradient(120deg, #ffffff, #00d4ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-family: 'Lobster', cursive;
+            font-size: 3.5rem;
+            color: #00ffcc;
+            text-shadow: 2px 2px 8px rgba(0, 255, 204, 0.5);
+            animation: float 3s infinite ease-in-out;
             margin-bottom: 20px;
         }
 
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
         .content {
-            max-width: 600px;
+            max-width: 650px;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.4);
-            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
         }
 
         h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #ffffff;
         }
 
         p {
-            font-size: 1rem;
-            line-height: 1.5;
+            font-size: 1.1rem;
+            line-height: 1.7;
             margin-bottom: 20px;
         }
 
         a {
-            color: #00d4ff;
+            color: #00ffcc;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.1rem;
         }
 
         a:hover {
             text-decoration: underline;
+            color: #00e6b3;
+        }
+
+        .button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #00ffcc;
+            color: #1a1a1a;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 255, 204, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background: #00e6b3;
+            box-shadow: 0 6px 15px rgba(0, 255, 204, 0.5);
         }
 
         footer {
@@ -68,20 +100,25 @@
             font-size: 0.9rem;
             color: #cccccc;
         }
+
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap');
     </style>
 </head>
 <body>
     <div class="logo">Northgoods</div>
     <div class="content">
-        <h1>We're Renovating!</h1>
+        <h1>Exciting Changes are Coming!</h1>
         <p>
-            Our website is currently under maintenance as we work on creating something amazing. 
-            In the meantime, you can find our products on <a href="https://www.amazon.com" target="_blank">Amazon</a>.
+            We're in the middle of renovating our website to bring you an improved experience. 
+            In the meantime, our amazing products are available on <a href="https://www.amazon.com" target="_blank">Amazon</a>.
         </p>
-        <p>We'll be back up and running in January 2025. Stay tuned!</p>
+        <p>We'll relaunch in January 2025. Stay tuned!</p>
+        <button class="button" onclick="location.href='https://www.amazon.com';">Shop on Amazon</button>
     </div>
     <footer>
         © 2024 Northgoods. All rights reserved.
     </footer>
 </body>
 </html>
+
